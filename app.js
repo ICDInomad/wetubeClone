@@ -9,12 +9,10 @@ import globalRouter from "./routers/globalRouter";
 import routes from "./routes";
 
 const app = express();
-
+app.set('view engine', "pug");
 // globally middlewares ex) ip ban... check log..
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(morgan("dev"));
 //--------------------------------
