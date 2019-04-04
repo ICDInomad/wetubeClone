@@ -14,8 +14,8 @@ Controller - function that looks for the data
 ## Pages
 
 - [X] Home
-- [] Join
-- [] Login
+- [X] Join
+- [X] Login
 - [x] search
 - [] User Detail
 - [] Edit Profile

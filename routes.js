@@ -7,8 +7,8 @@ const SEARCH = "/search";
 
 // Users
 const USERS = "/users";
-const EDIT_PROFILE = "/edit-profile";
-const CHANGE_PASSWORD = "/change-password";
+const EDIT_PROFILE = "/users/edit-profile";
+const CHANGE_PASSWORD = "/users/change-password";
 const USER_DETAIL = "/:id";
 
 // Videos
@@ -31,7 +31,7 @@ const routes = {
   upload: UPLOAD,
   videoDetail: VIDEO_DETAIL,
   editVideo: EDIT_VIDEO,
-  deleteVideo: DELETE_VIDEO
+  deleteVideo: DELETE_VIDEO,
 };
 
 export default routes;
