@@ -9,3 +9,17 @@
 Model - data
 View - how does the data look
 Controller - function that looks for the data
+
+
+## Pages
+
+- [X] Home
+- [] Join
+- [] Login
+- [x] search
+- [] User Detail
+- [] Edit Profile
+- [] change Password
+- [] Upload Video
+- [] Video Detail
+- [] Edit Video
