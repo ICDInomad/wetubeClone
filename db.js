@@ -4,7 +4,7 @@ export const videos = [
         title: "Video awesome",
         description: "This is something",
         views: 24,
-        videoFile: "https://www.youtube.com/watch?v=RWRO1bVhU2g",
+        videoFile: "http://techslides.com/demos/sample-videos/small.mp4",
         creator: {
             id:"121212",
             name:"Armenpo",
@@ -15,8 +15,8 @@ export const videos = [
         id: 11111,
         title: "Video good",
         description: "This is something",
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=RWRO1bVhU2g",
+        views: 5555123,
+        videoFile: "http://techslides.com/demos/sample-videos/small.mp4",
         creator: {
             id:"121212",
             name:"Armenpo",
@@ -27,8 +27,8 @@ export const videos = [
         id: 22222,
         title: "Video nice",
         description: "This is something",
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=RWRO1bVhU2g",
+        views: 33,
+        videoFile: "http://techslides.com/demos/sample-videos/small.mp4",
         creator: {
             id:"121212",
             name:"Armenpo",
@@ -39,8 +39,8 @@ export const videos = [
         id: 33333,
         title: "Video weeeeee",
         description: "This is something",
-        views: 24,
-        videoFile: "https://www.youtube.com/watch?v=RWRO1bVhU2g",
+        views: 44,
+        videoFile: "http://techslides.com/demos/sample-videos/small.mp4",
         creator: {
             id:"121212",
             name:"Armenpo",
