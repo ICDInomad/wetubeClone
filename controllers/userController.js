@@ -25,7 +25,10 @@ export const postLogin = (req, res) => {
 //     To Do inspect DB match
 };
 
-export const logout = (req, res) => res.render("logout", {pageTitle: 'Logout'});
+export const logout = (req, res) => {
+    // process logout
+    res.redirect(routes.home);
+}
 export const editProfile = (req, res) => res.render("editProfile", {pageTitle: 'Edit Profile'});
 export const changePassword = (req, res) => res.render("changePassword", {pageTitle: 'Change Password'});
 export const userDetail = (req, res) => res.render("userDetail", {pageTitle: 'User Detail'});
