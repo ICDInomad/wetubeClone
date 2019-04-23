@@ -5,11 +5,11 @@ import Comment from "../models/Comment";
 export const home = async (req, res) => {
     try {
         const videos = await Video.find({});
-        throw Error("Empty videos");
         res.render("home", {
             pageTitle: "Home",
             videos
         });
+        throw Error("Empty videos");
     } catch (error) {
         console.log(error);
         res.render("home", {
@@ -18,7 +18,6 @@ export const home = async (req, res) => {
         });
     }
 };
-
 export const search = async (req, res) => {
     const {
         query: {
@@ -27,12 +26,12 @@ export const search = async (req, res) => {
     } = req;
     try {
         const videos = await Video.find({});
-        throw Error("Empty videos");
         res.render("search", {
             pageTitle: "Search",
             searchingBy,
             videos
         });
+        throw Error("Empty videos");
     } catch (error) {
         console.log(error);
         res.render("search", {
@@ -42,7 +41,6 @@ export const search = async (req, res) => {
         });
     }
 };
-
 export const getUpload = (req, res) =>
     res.render("upload", {
         pageTitle: "Upload"
@@ -57,13 +55,14 @@ export const postUpload = async (req, res) => {
         file: {
             path
         }
-    } = req
+    } = req;
     const newVideo = await Video.create({
         fileUrl: path,
         title,
         description
-    })
-    //     res.redirect(routes.videoDetail(324393));
+    });
+    console.log(newVideo);
+    res.redirect(routes.videoDetail(newVideo.id));
 };
 
 export const videoDetail = (req, res) =>

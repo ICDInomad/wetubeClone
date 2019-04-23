@@ -12,6 +12,7 @@ import routes from "./routes";
 const app = express();
 app.use(helmet());
 app.set('view engine', "pug");
+app.use("/uploads", express.static("uploads"));
 // globally middlewares ex) ip ban... check log..
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
